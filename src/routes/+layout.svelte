@@ -1,5 +1,7 @@
 <script>
+    import {page} from '$app/stores'
     let opened = false
+    $: url = $page.url.pathname
 </script>
 
 <nav>
@@ -17,10 +19,10 @@
         <button on:click={()=>{opened = false}}>X</button>
     </div>
     <div class="menu-links">
-        <a href="/" class="menu-link"><span>01</span><span>Home</span></a>
-        <a href="/about" class="menu-link"><span>02</span><span>About</span></a>
-        <a href="/projects" class="menu-link"><span>03</span><span>Projects</span></a>
-        <a href="/contact" class="menu-link"><span>04</span><span>Contact</span></a>
+        <a href="/" class="menu-link" class:active-link = {url === "/"} ><span>01</span><span>Home</span></a>
+        <a href="/about" class="menu-link" class:active-link = {url === "/about"}><span>02</span><span>About</span></a>
+        <a href="/projects" class="menu-link" class:active-link = {url === "/projects"}><span>03</span><span>Projects</span></a>
+        <a href="/contact" class="menu-link" class:active-link = {url === "/contact"}><span>04</span><span>Contact</span></a>
     </div>
     <div class="qr-code">
         <img src="/qr-code.svg" alt="qr-code"/>
@@ -88,6 +90,12 @@
     }
     .menu-link span{
         padding: 0 3dvw;
+    }
+    .active-link{
+        background-color: #101010;
+    }
+    .active-link span{
+        color:white;
     }
     .menu a{
         font-family: mono;
