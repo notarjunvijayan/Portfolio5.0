@@ -8,15 +8,34 @@
     </div>
     <div class="links">
         <a href="/about">About</a>
-        <a href="/about">Projects</a>
+        <a href="/projects">Projects</a>
         <a href="/contact">Contact</a>
+    </div>
+    <div class="lines">
+        <hr/>
+        <hr/>
+        <hr/>
     </div>
 </div>
 
 
 <style>
+    .lines{
+        position:absolute;
+        width: 100dvw;
+        height: 100dvh;
+        display:flex;
+        z-index: -1;
+        top: 0;
+        background-color: #101010;;
+    }
+    .lines hr{
+        position: relative;
+        width:0.5px;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+    }
     .orange{
-        color: orange;
+        color: #FF6F00;
     }
     .hero{
         height: 70dvh;
@@ -48,9 +67,10 @@
         font-size: 1.5rem;
     }
     .container{
-        background-color: #101010;
+        background: transparent;
         color:white;
         padding-top: 10vh;
         height: 100vh;
+        z-index: 0;
     }
 </style>
