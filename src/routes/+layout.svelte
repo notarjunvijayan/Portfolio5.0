@@ -1,5 +1,5 @@
 <nav>
-    <h2>AV</h2>
+    <h2><a href="/">AV</a></h2>
     <button>Menu</button>
 </nav>
 
@@ -24,6 +24,15 @@
     h2{
         font-family: mono;
         font-size: 2rem;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+    a:hover{
+        color: #FF6F00;
     }
 </style>
 

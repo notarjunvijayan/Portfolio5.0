@@ -3,3 +3,8 @@
         font-style: normal;
         src: url(/Fonts/monoregular.otf) format('opentype');
     }
+    @font-face {
+        font-family: 'aeonik';
+        font-style: normal;
+        src: url(/Fonts/AeonikRegular.otf) format('opentype');
+    }

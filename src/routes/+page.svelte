@@ -1,15 +1,21 @@
 <div class="container">
     <div class="hero">
         <div class="hero-text">
-            <p>I'm a</p>
             <h1><span class="orange">WEB</span></h1>
             <h1>DEVELOPER</h1>
         </div>
     </div>
-    <div class="links">
-        <a href="/about">About</a>
-        <a href="/projects">Projects</a>
-        <a href="/contact">Contact</a>
+    <div class="bottom">
+        <div class="home-text">
+            <p>Hi :)</p>
+            <p>Welcome to my portfolio webpage, where I talk about me and showcase my projects</p>
+            <p>Start now by navigating from the links given</p>
+        </div>
+        <div class="links">
+            <a href="/about">About</a>
+            <a href="/projects">Projects</a>
+            <a href="/contact">Contact</a>
+        </div>
     </div>
     <div class="lines">
         <hr/>
@@ -38,7 +44,7 @@
         color: #FF6F00;
     }
     .hero{
-        height: 70dvh;
+        height: 50dvh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -46,18 +52,35 @@
     .hero-text{
         text-align: center;
     }
+    .home-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 40dvh;
+    }
     h1{
         font-family: mono;
-        font-size: 7rem;
+        font-size: 10rem;
         margin: 0;
-        line-height: 9rem;
+        line-height: 11rem;
         font-weight: 500;
+    } 
+    p{
+        font-family: aeonik;
+        line-height: 0.5rem;
+        font-size: 1.2rem;
+    }
+    .bottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 3dvw;
+        height: 40dvh;
     }
     .links{
         display: flex;
         flex-direction: column;
         align-items: end;
-        padding: 0 3dvw;
         height: 2dvh;
     }
     .links a{
@@ -65,12 +88,16 @@
         color: white;
         font-family: mono;
         font-size: 1.5rem;
+        line-height: 3rem;
+    }
+    a:hover{
+        color:#FF6F00;
     }
     .container{
         background: transparent;
         color:white;
         padding-top: 10vh;
-        height: 100vh;
+        height: 90dvh;
         z-index: 0;
     }
 </style>

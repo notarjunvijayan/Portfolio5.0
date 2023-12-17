@@ -15,7 +15,7 @@
     .lines{
         position:absolute;
         width: 100dvw;
-        height: 100dvh;
+        height: inherit;
         display:flex;
         z-index: -1;
         top: 0;
