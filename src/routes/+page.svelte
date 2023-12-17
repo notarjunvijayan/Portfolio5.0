@@ -1,5 +1,5 @@
 <script>
-    let entered = true
+    let entered = false
 </script>
 
 <div class="loader" class:active = {entered === true}>
