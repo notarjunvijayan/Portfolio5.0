@@ -19,12 +19,14 @@
         display:flex;
         z-index: -1;
         top: 0;
-        background-color: #101010;;
+        background-color: #101010;
     }
     .lines hr{
         position: relative;
-        width:0.5px;
-        border: 1px solid rgba(255, 255, 255, 0.125);
+        width:1px;
+        border: none;
+        background-color: rgba(255, 255, 255);
+        opacity: 0.2;
     }
     .url{
         font-family: mono;

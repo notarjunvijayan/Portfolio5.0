@@ -8,6 +8,9 @@
         <hr/>
         <hr/>
         <hr/>
+        <div class="background">
+            <div class="noise"></div>
+        </div>
     </div>
 </div>
 
@@ -23,8 +26,10 @@
     }
     .lines hr{
         position: relative;
-        width:0.5px;
-        border: 1px solid rgba(255, 255, 255, 0.125);
+        width:1px;
+        border: none;
+        background-color: rgba(255, 255, 255);
+        opacity: 0.2;
     }
     .url{
         font-family: mono;
@@ -37,5 +42,15 @@
     }
     .content{
         padding:15dvh 3rem;
+    }
+    .noise{
+        background: url(/background.png);
+        position: absolute;
+        width: 100dvw;
+        height: 100dvh;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        opacity: 0.05;
     }
 </style>

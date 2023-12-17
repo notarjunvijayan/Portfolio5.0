@@ -8,3 +8,6 @@
         font-style: normal;
         src: url(/Fonts/AeonikRegular.otf) format('opentype');
     }
+        body{
+            overflow-x:hidden ;
+        }
